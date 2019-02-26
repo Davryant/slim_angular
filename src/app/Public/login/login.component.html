@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-xl-5 mx-auto">
+      <div class="card card-signin flex-row my-3">
+        <div class="card-body">
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Message</strong> Login failed!!!
+              </div>
+          <h5 class="card-title text-center">Login</h5>
+          <form class="form-signin">
+            <div class="form-label-group">
+              <input type="text" id="userame" class="form-control" name="username" placeholder=" Username" required [(ngModel)]="username">
+              
+            </div>
+            <div class="form-label-group">
+              <input type="password" id="password" class="form-control" name="password" placeholder=" Password" required [(ngModel)]="password">
+              
+            </div>
+          
+            <input type="submit" class="btn btn-lg btn-primary btn-block text-uppercase" value="Login" (click)="onClickSignIn()">
+           
+            <a class="d-block text-center mt-2 small" href="register">Don't have accout? Register</a>
+            
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+            <a class="d-block text-center mt-2 small" href="">Forgot Password?</a>
+            </div>
+            <hr class="my-4">
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
